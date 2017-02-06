@@ -22,10 +22,10 @@ Note: remember that the printed value of pi will be an estimate!
 
 """
 n=int(input("I will estimate pi. How many terms should I use?"))
-d=input("How many decimal places should I use in the result?")
+d=int(input("How many decimal places should I use in the result?"))
 
-pi=4*(1.0/sum([(((-1)**(k+1))((1.0)/(k+2))) for k in range(0,n)]))
-print (pi)
+pi=4*sum([(((-1)**(x))/((2*x+1))) for x in range(0,n)])
 
 
-print ("The approximate value of pi is x")
+
+print ("The approximate value of pi is {0}".format(round(pi,d)))
