@@ -28,4 +28,4 @@ pi=4*sum([(((-1)**(x))/((2*x+1))) for x in range(0,n)])
 
 
 
-print ("The approximate value of pi is {0}".format(round(pi,d)))
+print ("The approximate value of pi is {0}".format(round(pi,(d+1))))
